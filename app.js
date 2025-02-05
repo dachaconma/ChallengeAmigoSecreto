@@ -33,3 +33,21 @@ function actualizarListaAmigos() {
         listaAmigos.appendChild(li);
     });
 }
+
+// Función declarar variable y generar un resultado aleatorio con función random
+function sortearAmigo() {
+    const resultado = document.getElementById('resultado');
+
+    // Validar si hay amigos en la lista. Si no hay amigos, genera msj en pantalla.
+    if (amigostot.length === 0) {
+        alert('No hay amigos en la lista para sortear.');
+        return;
+    }
+
+    // Función Math.Floor para acerca el resultado al más próximo de la decena por la cantidad.
+    const indiceAleatorio = Math.floor(Math.random() * amigostot.length);
+    const amigoSeleccionado = amigostot[indiceAleatorio];
+
+    // Mostrar el resultado en pantalla en la parte de abajo por li.
+    resultado.innerHTML = `<li>El amigo secreto es: <strong>${amigoSeleccionado}</strong></li>`;
+}
