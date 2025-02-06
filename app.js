@@ -49,5 +49,5 @@ function sortearAmigo() {
     const amigoSeleccionado = amigostot[indiceAleatorio];
 
     // Mostrar el resultado en pantalla en la parte de abajo por li.
-    resultado.innerHTML = `<li>El amigo secreto es: <strong>${amigoSeleccionado}</strong></li>`;
+    resultado.innerHTML = `<li>El juego es mentiras. Te amo :)</li>`;
 }
